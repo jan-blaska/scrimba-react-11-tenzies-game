@@ -23,14 +23,30 @@ main {
     margin: calc((100vh - 600px) / 2) auto;
     background-color: #F5F5F5;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
 }
 
 .dice-container {
     display: grid;
     grid-template: auto auto / repeat(5, 1fr);
     gap: 40px;
+    margin-bottom: 40px;
 }
 
 .die {
@@ -47,4 +63,24 @@ main {
 
 .die h1 {
     font-size: 2.5rem;
+}
+
+.roll-dice-btn {
+    background-color: #5035FF;
+    color: #fff;
+    font-family: inherit;
+    font-size: 2rem;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.roll-dice-btn:focus {
+    outline: none;
+}
+
+.roll-dice-btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
